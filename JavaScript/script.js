@@ -91,11 +91,12 @@ console.log(companies);
 */
 
 /*********************************************************************************************/
+/*********************************************************************************************/
 
 /* JavaScript Array Methods🔥 */
 /* Non-Mutation👇 */
 
-/* forEach
+/* forEach method
   
   forEach Syntax👇
 
@@ -106,8 +107,8 @@ console.log(companies);
 element: The current element being processed in the array.
 index (optional): The index of the current element.
 array (optional): The entire array being iterated.
-*/
 
+************************************************************
 // Practice Question for forEach
 // For a given array of numbers, print the square of each value using the forEach loop.
 
@@ -129,8 +130,12 @@ let calSquare = (squaNum) => {
 squaNums.forEach(calSquare);
 */
 
-let elem = ["hi", "hello", "byye", "by"];
 
-elem.forEach((val) => {
-  console.log(val.toUpperCase());
+/* map method */
+let nums = [3,4,5,6,7,8];
+
+let doubleNum = nums.map((val) => {
+  return val * 2;
 })
+
+console.log(doubleNum);
