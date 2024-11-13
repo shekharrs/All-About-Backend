@@ -1,0 +1,6 @@
+Before starting with backend developement learning journey first learn this important of JavaScript topics👇
+
+- Fundamentals of JavaScript
+- Arrays and Objects /* Array Methods - foreach | map | filter | find | indexOf */
+- Functions return
+- Async.js coding
