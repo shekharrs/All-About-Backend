@@ -1,9 +1,5 @@
-// Fundamentals of JavaScript
-// Arrays and Objects /* Array - foreach | map | filter | find | indexOf */
-// Functions return
-// Async.js coding
-
 /* JavaScript Array Methods🔥 */
+/* Mutation👇 */
 
 /* push - add the element to the end */
 // let foodItems = ["Apple", "banana", "Mango", "Lichi"];
@@ -94,10 +90,39 @@ companies.push("Amazon");
 console.log(companies);
 */
 
-function myPro() {
-    console.log("Heyy");
-    console.log("Byye");
+/*********************************************************************************************/
+
+/* JavaScript Array Methods🔥 */
+/* Non-Mutation👇 */
+
+/* forEach
+  
+  forEach Syntax👇
+
+  array.forEach((element, index, array) => {
+  // code to execute for each element
+});
+
+element: The current element being processed in the array.
+index (optional): The index of the current element.
+array (optional): The entire array being iterated.
+*/
+
+// Practice Question for forEach
+// For a given array of numbers, print the square of each value using the forEach loop.
+
+// 1st way👇
+// let nums = [55, 79, 99, 65];
+
+// nums.forEach((num) => {
+//     console.log(num*num);
+// })
+
+// 2nd way👇
+let squaNums = [2,3,4,5,6];
+
+let calSquare = (squaNum) => {
+    console.log(squaNum*squaNum);
 }
 
-myPro();
-myPro();
+squaNums.forEach(calSquare);
