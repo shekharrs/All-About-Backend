@@ -111,14 +111,15 @@ array (optional): The entire array being iterated.
 // Practice Question for forEach
 // For a given array of numbers, print the square of each value using the forEach loop.
 
-// 1st way👇
-// let nums = [55, 79, 99, 65];
+/* 1st way👇
+let nums = [55, 79, 99, 65];
 
-// nums.forEach((num) => {
-//     console.log(num*num);
-// })
+nums.forEach((num) => {
+    console.log(num*num);
+})
+*/
 
-// 2nd way👇
+/* 2nd way👇
 let squaNums = [2,3,4,5,6];
 
 let calSquare = (squaNum) => {
@@ -126,3 +127,10 @@ let calSquare = (squaNum) => {
 }
 
 squaNums.forEach(calSquare);
+*/
+
+let elem = ["hi", "hello", "byye", "by"];
+
+elem.forEach((val) => {
+  console.log(val.toUpperCase());
+})
