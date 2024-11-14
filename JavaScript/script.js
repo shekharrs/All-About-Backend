@@ -238,3 +238,4 @@ let factVal = arr.reduce((prevVal, currVal) => {
 })
 console.log("factorial value = ",factVal);
 */
+let newArr = [1,2,3]
