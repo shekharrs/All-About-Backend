@@ -3,6 +3,6 @@ Before starting with backend developement learning journey first learn this impo
 - Fundamentals of JavaScript
 - Arrays and Objects
 - Array Methods(Mutation) - [ push|pop|toString|concat|unshift|shift|slice|splice ]
-- Array Methods(Non-Mutation) - [ foreach | map | filter | find | indexOf --->[Most Imp👨‍💻] ]
+- Array Methods(Non-Mutation) - [ foreach | map | filter | reduce | find | indexOf --->[Most Imp👨‍💻] ]
 - Functions return
 - Async.js coding
