@@ -180,6 +180,26 @@ console.log(largArr);
 */
 
 
+/* find method - Finds the first element that matches a condition
+
+let arr = [2,4,7,6,9,7,8];
+
+let output = arr.find((val) => {
+  return val == 7;
+})
+console.log(output);
+*/
+
+
+/* indexOf - Finds the index of a specific element
+
+let arr = [2,4,5,6,8,9,1];
+
+let newArr = arr.indexOf(5);
+console.log("index = ",newArr);
+*/
+
+
 
 /* Practice Question🔥 
 Qs. We are given array of marks of students. Filter our of the marks of students that scored 90+.
