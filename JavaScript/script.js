@@ -96,7 +96,7 @@ console.log(companies);
 /* JavaScript Array Methods🔥 */
 /* Non-Mutation👇 */
 
-/* forEach method
+/* forEach method - It is a function to execute for each element in the array.
   
   forEach Syntax👇
 
@@ -131,7 +131,8 @@ squaNums.forEach(calSquare);
 */
 
 
-/* map method 
+/* map method - Creates a new array with the results of some operations. Tha value its callback returns are used to form new array.
+
 // arr.map(callbackFun(value, index, array)) 
 
 let nums = [3,4,5,6,7,8];
@@ -144,7 +145,9 @@ console.log(doubleNum);
 */
 
 
-/* filter method */
+/* filter method - Creates a new array of elements that give true for a condition/filter.
+
+for eg: all even elements.
 let arr = [1,2,3,4,5,6,7];
 
 let evenArr = arr.filter((val) => {
@@ -153,3 +156,65 @@ let evenArr = arr.filter((val) => {
 
 console.log(evenArr);
 console.log(arr);
+*/
+
+
+/* reduce method - Perform some operations & reduces the array to a single value. It returns that single value. 
+
+// To calculate the total elements of the array and create a new array with the total number of elements.
+let arr = [1,2,3,4,5]
+
+let total = arr.reduce((prevVal, currVal) => {
+  return prevVal + currVal;
+});
+console.log(total);
+
+
+// find the largest number of the element in the array
+let arr = [2,1,3,7,4,8,5];
+
+const largArr = arr.reduce((prevVal, currVal) => {
+  return prevVal > currVal ? prevVal : currVal;
+});
+console.log(largArr);
+*/
+
+
+
+/* Practice Question🔥 
+Qs. We are given array of marks of students. Filter our of the marks of students that scored 90+.
+
+let marks = [89,92,87,94,90,77];
+
+let largMarks = marks.filter((val) => {
+  return val > 90;
+});
+console.log(largMarks);
+
+
+Qs. Take a number n as input from user. Create an array of numbers from 1 to n.
+Use the reduce method to calculate sum of all numbers in the array.
+Use the reduce method to calculate product of all numbers in the array.
+
+// Take a number n as input from user. Create an array of numbers from 1 to n.
+let n = prompt("Enter a number: ");
+
+let arr = [];
+
+for (let i=1; i<=n; i++){
+  arr[i-1] = i;
+}
+console.log(arr);
+
+// Use the reduce method to calculate sum of all numbers in the array.
+let sumVal = arr.reduce((prevVal, currVal) => {   
+  return prevVal + currVal;
+})
+console.log("sum value = ",sumVal);
+
+// Use the reduce method to calculate product of all numbers in the array.
+let factVal = arr.reduce((prevVal, currVal) => {
+  return prevVal * currVal;
+})
+console.log("factorial value = ",factVal);
+*/
