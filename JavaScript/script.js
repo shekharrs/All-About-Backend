@@ -283,14 +283,13 @@ function fetchData(callback) {
     console.log("Data has been fetch!", callback);
   }, 2000);
 }
-
 function processData() {
   console.log("processing data...");
 }
-
 fetchData(processData());
-*/
 
+
+// Example of Callback Hell
 setTimeout(() => {
   console.log("Task 1");
   setTimeout(() => {
@@ -300,3 +299,39 @@ setTimeout(() => {
     }, 1000);
   }, 1000);
 }, 1000);
+*/
+
+
+/******************************************************************************************************/
+
+
+
+/* JavaScript - Promises🍵 */
+// A Promise is a JavaScript object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises provide a cleaner and more structured way to handle asynchronous operations and avoid callback hell.
+
+function asyncFun() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data1");
+      resolve("Success");
+    }, 4000);
+  });
+};
+
+function asyncFun2() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data2");
+      resolve("Success");
+    }, 4000);
+  });
+};
+
+console.log("fetching the data1...")
+asyncFun().then((res) => {
+  console.log(res);
+  console.log("fetching the data2...");
+  asyncFun2().then((res) => {
+    console.log(res);
+  });
+});
