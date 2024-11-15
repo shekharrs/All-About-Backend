@@ -7,19 +7,16 @@
 
 // console.log(foodItems);
 
-
 /* pop - delete from end & return */
 // let arr = [1,2,3,4];
 // arr.pop();
 
 // console.log(arr);
 
-
 /* toString - convert array to string */
 // let elements = ["Gold", "Silver", "Bronze"];
 // console.log(elements);
 // console.log(elements.toString());
-
 
 /* concat - joins multiple arrays & returns result */
 // let marvelHeros = ["Thor", "Ironman", "Spiderman"];
@@ -28,13 +25,11 @@
 // let Heros = marvelHeros.concat(dcHeros);
 // console.log(Heros);
 
-
 /* unshift - add the first element */
 // let array = ["Man", "Boy", "Women", "Girl"];
 // array.unshift("Humans");
 
 // console.log(array);
-
 
 /* shift - delete the first element and return the value */
 // let newarr = ["Humans", "Men", "Boy", "Women", "Girl"];
@@ -42,13 +37,11 @@
 
 // console.log("Deleted", value);
 
-
 /* slice - returns a piece of the array ) */
 // let elem = ["Lion", "Liger", "Tiger", "Wolf"];
 // let newElem = elem.slice(1, 3);
 
 // console.log(newElem);
-
 
 /* splice - change the original array (add, remove, replace) */
 // splice(startIdx, delCount, newElem) - syntax
@@ -66,8 +59,6 @@
 // arr.splice(3, 1, 101)
 
 // console.log(arr);
-
-
 
 /* Practice Question🔥 */
 
@@ -130,7 +121,6 @@ let calSquare = (squaNum) => {
 squaNums.forEach(calSquare);
 */
 
-
 /* map method - Creates a new array with the results of some operations. Tha value its callback returns are used to form new array.
 
 // arr.map(callbackFun(value, index, array)) 
@@ -144,7 +134,6 @@ let doubleNum = nums.map((val) => {
 console.log(doubleNum);
 */
 
-
 /* filter method - Creates a new array of elements that give true for a condition/filter.
 
 for eg: all even elements.
@@ -157,7 +146,6 @@ let evenArr = arr.filter((val) => {
 console.log(evenArr);
 console.log(arr);
 */
-
 
 /* reduce method - Perform some operations & reduces the array to a single value. It returns that single value. 
 
@@ -179,7 +167,6 @@ const largArr = arr.reduce((prevVal, currVal) => {
 console.log(largArr);
 */
 
-
 /* find method - Finds the first element that matches a condition
 
 let arr = [2,4,7,6,9,7,8];
@@ -190,7 +177,6 @@ let output = arr.find((val) => {
 console.log(output);
 */
 
-
 /* indexOf - Finds the index of a specific element
 
 let arr = [2,4,5,6,8,9,1];
@@ -198,8 +184,6 @@ let arr = [2,4,5,6,8,9,1];
 let newArr = arr.indexOf(5);
 console.log("index = ",newArr);
 */
-
-
 
 /* Practice Question🔥 
 Qs. We are given array of marks of students. Filter our of the marks of students that scored 90+.
@@ -239,10 +223,7 @@ let factVal = arr.reduce((prevVal, currVal) => {
 console.log("factorial value = ",factVal);
 */
 
-
 /******************************************************************************************************/
-
-
 
 /* JavaScript - Objects🌟 */
 /* Objects are fundamental in JavaScript, providing a versatile way to store and manipulate data. They are especially useful when working with data fetched from APIs, which is often structured as objects
@@ -255,10 +236,7 @@ let object_name = {
 }
 */
 
-
 /******************************************************************************************************/
-
-
 
 /* JavaScript - functions return🚀 */
 /* In JavaScript, the return statement is used within a function to output a value back to wherever the function was called.  
@@ -270,12 +248,9 @@ function elem() {
 elem();
 */
 
-
 /******************************************************************************************************/
 
-
-
-/* JavaScript - Aysnc👨‍💻 */
+/* JavaScript - Callbacks👨‍💻 */
 /* Callbacks - A callback is a function passed as an argument to another function. It is executed after the completion of the asynchronous operation.
 
 function fetchData(callback) {
@@ -301,37 +276,34 @@ setTimeout(() => {
 }, 1000);
 */
 
-
 /******************************************************************************************************/
-
-
 
 /* JavaScript - Promises🍵 */
 // A Promise is a JavaScript object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises provide a cleaner and more structured way to handle asynchronous operations and avoid callback hell.
 
-function asyncFun() {
+function getData(dataId) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("Data1");
-      resolve("Success");
-    }, 4000);
+      console.log("Data", dataId);
+      resolve("success");
+    }, 2000);
   });
-};
+}
 
-function asyncFun2() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("Data2");
-      resolve("Success");
-    }, 4000);
-  });
-};
+//Promise Chain - Promise chaining is a common practice in JavaScript where you can chain multiple `.then()` calls to handle asynchronous operations in sequence. This makes the code easier to read and manage compared to nested callbacks.
 
-console.log("fetching the data1...")
-asyncFun().then((res) => {
-  console.log(res);
-  console.log("fetching the data2...");
-  asyncFun2().then((res) => {
+// Promise Chain //
+console.log("Getting data 1...");
+getData(1)
+  .then((res) => {
+    console.log("Getting data 2...");
+    return getData(2);
+  })
+  .then((res) => {
+    console.log("Getting data 3...");
+    return getData(3);
+  })
+  .then((res) => {
     console.log(res);
   });
-});
+  // Promise Chain //
