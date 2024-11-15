@@ -260,10 +260,43 @@ let object_name = {
 
 
 
-/* JavaScript - functions return */
+/* JavaScript - functions return🚀 */
+/* In JavaScript, the return statement is used within a function to output a value back to wherever the function was called.  
+
 function elem() {
   return "Hello JavaScript";
 }
 
-let output = elem();
-console.log(elem())
+elem();
+*/
+
+
+/******************************************************************************************************/
+
+
+
+/* JavaScript - Aysnc👨‍💻 */
+/* Callbacks - A callback is a function passed as an argument to another function. It is executed after the completion of the asynchronous operation.
+
+function fetchData(callback) {
+  setTimeout(() => {
+    console.log("Data has been fetch!", callback);
+  }, 2000);
+}
+
+function processData() {
+  console.log("processing data...");
+}
+
+fetchData(processData());
+*/
+
+setTimeout(() => {
+  console.log("Task 1");
+  setTimeout(() => {
+    console.log("Task 2");
+    setTimeout(() => {
+      console.log("Task 3");
+    }, 1000);
+  }, 1000);
+}, 1000);
