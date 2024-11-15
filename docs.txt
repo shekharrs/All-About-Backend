@@ -5,4 +5,4 @@ Before starting with backend developement learning journey first learn this impo
 - Array Methods(Mutation) - [ push|pop|toString|concat|unshift|shift|slice|splice ]
 - Array Methods(Non-Mutation) - [ foreach | map | filter | reduce | find | indexOf --->[Most Imp👨‍💻] ]
 - Functions return
-- Async.js coding
+- Async.js coding - [Callbacks, Async Functions, Async/Await]
