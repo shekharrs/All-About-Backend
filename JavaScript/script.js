@@ -238,3 +238,32 @@ let factVal = arr.reduce((prevVal, currVal) => {
 })
 console.log("factorial value = ",factVal);
 */
+
+
+/******************************************************************************************************/
+
+
+
+/* JavaScript - Objects🌟 */
+/* Objects are fundamental in JavaScript, providing a versatile way to store and manipulate data. They are especially useful when working with data fetched from APIs, which is often structured as objects
+
+Syntax:
+
+let object_name = {
+    key_name : value,
+    ...
+}
+*/
+
+
+/******************************************************************************************************/
+
+
+
+/* JavaScript - functions return */
+function elem() {
+  return "Hello JavaScript";
+}
+
+let output = elem();
+console.log(elem())
