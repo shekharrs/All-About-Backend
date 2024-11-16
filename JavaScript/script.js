@@ -323,16 +323,43 @@ getData(1)
   // Promise Chain //
   */
 
-function api() {
+
+/******************************************************************************************************/
+
+
+
+/* JavaScript - Async-Await🔥
+//Async functions always returns a promise.
+//Await pauses the execution of its surrounding async function until the promise is settled.
+
+function getData(dataId) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("Weather data API");
-      resolve(200);
+      console.log("Data", dataId);
+      resolve("success");
     }, 2000);
   });
 }
 
-async function weatherApi() {
-  await api(); // 1st time call. 
-  await api(); // 2nd time call.
-}
+async function getAllData() {
+  console.log("Getting data 1...");
+  await getData(1);
+  console.log("Getting data 2...");
+  await getData(2);
+  console.log("Getting data 3...");
+  await getData(3);
+};
+
+/*
+IIFE (Immediately Invoked Function Expression) is a function that is called immediately as soon as it is defined.
+
+(async function() {
+  console.log("Getting data 1...");
+  await getData(1);
+  console.log("Getting data 2...");
+  await getData(2);
+  console.log("Getting data 3...");
+  await getData(3);
+})();
+
+*/
