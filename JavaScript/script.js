@@ -370,6 +370,7 @@ IIFE (Immediately Invoked Function Expression) is a function that is called imme
 
 
 /* JavaScript - Fetch API💻 */
+
 // Fetch API - The Fetch API provides an interface for fetching (sending / receiving) resources. It uses Request and Response objects. The Fetch() method is used to fetch a resource(data).
 
 const URL = `https://cat-fact.herokuapp.com/facts`;
@@ -382,7 +383,7 @@ const getFacts = async () => {
   console.log(response);   // JSON format📁
   let data = await response.json();
   // console.log(data[0].text);       // json()
-  factPara.innerText = data[0].text;
+  factPara.innerText = data[1].text;
 }
 
 btn.addEventListener("click", getFacts);
