@@ -6,3 +6,4 @@ Before starting with backend development learning journey first learn this impor
 - Array Methods(Non-Mutation) - [ foreach | map | filter | reduce | find | indexOf --->[Most Imp👨‍💻] ]
 - Functions return
 - Async.js coding - [Callbacks, Async Functions, Async/Await]
+-Fetch API
