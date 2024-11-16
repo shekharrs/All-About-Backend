@@ -223,7 +223,10 @@ let factVal = arr.reduce((prevVal, currVal) => {
 console.log("factorial value = ",factVal);
 */
 
+
 /******************************************************************************************************/
+
+
 
 /* JavaScript - Objects🌟 */
 /* Objects are fundamental in JavaScript, providing a versatile way to store and manipulate data. They are especially useful when working with data fetched from APIs, which is often structured as objects
@@ -236,7 +239,10 @@ let object_name = {
 }
 */
 
+
 /******************************************************************************************************/
+
+
 
 /* JavaScript - functions return🚀 */
 /* In JavaScript, the return statement is used within a function to output a value back to wherever the function was called.  
@@ -248,7 +254,10 @@ function elem() {
 elem();
 */
 
+
 /******************************************************************************************************/
+
+
 
 /* JavaScript - Callbacks👨‍💻 */
 /* Callbacks - A callback is a function passed as an argument to another function. It is executed after the completion of the asynchronous operation.
@@ -276,9 +285,12 @@ setTimeout(() => {
 }, 1000);
 */
 
+
 /******************************************************************************************************/
 
-/* JavaScript - Promises🍵 */
+
+
+/* JavaScript - Promises🍵 
 // A Promise is a JavaScript object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises provide a cleaner and more structured way to handle asynchronous operations and avoid callback hell.
 
 function getData(dataId) {
@@ -293,6 +305,7 @@ function getData(dataId) {
 //Promise Chain - Promise chaining is a common practice in JavaScript where you can chain multiple `.then()` calls to handle asynchronous operations in sequence. This makes the code easier to read and manage compared to nested callbacks.
 
 // Promise Chain //
+
 console.log("Getting data 1...");
 getData(1)
   .then((res) => {
@@ -306,4 +319,20 @@ getData(1)
   .then((res) => {
     console.log(res);
   });
+
   // Promise Chain //
+  */
+
+function api() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Weather data API");
+      resolve(200);
+    }, 2000);
+  });
+}
+
+async function weatherApi() {
+  await api(); // 1st time call. 
+  await api(); // 2nd time call.
+}
