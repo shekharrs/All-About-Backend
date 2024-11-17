@@ -24,7 +24,7 @@ Before diving into the backend development journey, it's crucial to have a solid
 
 ---
 
-![Path to success](GitHub_docs_backend.png)
+![Path to success](./GitHub_docs_backend.png)
 
 ---
 
