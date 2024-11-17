@@ -31,4 +31,4 @@ Before diving into the backend development journey, it's crucial to have a solid
 ## Next Steps
 📝 **Pro Tip**: Be sure to read the `Docs` folder carefully before advancing to the next level.
 
-Happy coding! ✨
+Happy coding! 🎃
