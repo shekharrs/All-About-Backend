@@ -1,5 +1,4 @@
 ✅ Before starting with backend development learning journey first learn this important JavaScript topics👇
-
 - Fundamentals of JavaScript
 - Arrays and Objects
 - Array Methods(Mutation) - [ push|pop|toString|concat|unshift|shift|slice|splice ]
