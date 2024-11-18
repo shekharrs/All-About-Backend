@@ -5,7 +5,7 @@ Before diving into the backend development journey, it's crucial to have a solid
 ![Path to success](Docs/GitHub_docs_backend.png)
 
 
-## Next Steps
+# Next Steps
 📝 **Pro Tip**: Be sure to read the `Docs` folder carefully before advancing to the next level.
 
 ---
