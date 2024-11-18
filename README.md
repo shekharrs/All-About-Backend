@@ -10,6 +10,8 @@ Before diving into the backend development journey, it's crucial to have a solid
 
 ---
 
+
+
 # Level 2 - Node.js 🤖
 
 ![Path to success](Docs/nodejs_learning_img.png)
