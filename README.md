@@ -4,7 +4,6 @@ Before diving into the backend development journey, it's crucial to have a solid
 
 ![Path to success](Docs/GitHub_docs_backend.png)
 
----
 
 ## Next Steps
 📝 **Pro Tip**: Be sure to read the `Docs` folder carefully before advancing to the next level.
@@ -14,6 +13,8 @@ Before diving into the backend development journey, it's crucial to have a solid
 # Level 2 - Node.js 🤖
 
 ![Path to success](Docs/nodejs_learning_img.png)
+
+---
 
 ![Path to success](Docs/npm_package_img.png)
 
