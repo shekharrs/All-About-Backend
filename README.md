@@ -9,7 +9,7 @@ Before diving into the backend development journey, it's crucial to have a solid
 📝 **Pro Tip**: Be sure to read the `Docs` folder carefully before advancing to the next level.
 
 ---
----
+# 
 
 
 # Level 2 - Node.js 🤖
@@ -20,4 +20,4 @@ Before diving into the backend development journey, it's crucial to have a solid
 
 ![Path to success](Docs/npm_package_img.png)
 
-#Happy coding! 🎃
+# Happy coding! 🎃
