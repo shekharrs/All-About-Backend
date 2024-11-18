@@ -1,4 +1,4 @@
-Before starting with backend development learning journey first learn this important JavaScript topics👇
+✅ Before starting with backend development learning journey first learn this important JavaScript topics👇
 
 - Fundamentals of JavaScript
 - Arrays and Objects
@@ -7,3 +7,13 @@ Before starting with backend development learning journey first learn this impor
 - Functions return
 - Async.js coding - [Callbacks, Async Functions, Async/Await]
 -Fetch API
+
+
+
+✅ Node.js👇
+- Node.js Basics:
+- Introduction to Node.js.
+- Installing Node.js and npm - (Node Package Manager).
+- Working with modules.
+- File system operations.
+- Understanding HTTP module.
