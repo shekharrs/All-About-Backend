@@ -6,9 +6,9 @@ Before diving into the backend development journey, it's crucial to have a solid
 
 
 # Next Steps
-📝 **Pro Tip**: Be sure to read the `Docs` folder carefully before advancing to the next level.
+📝 **Pro Tip**: Be sure to read the `Docs` & `JavaScript` folder carefully before advancing to the next level.
 
----
+
 # 
 
 
@@ -19,5 +19,9 @@ Before diving into the backend development journey, it's crucial to have a solid
 ---
 
 ![Path to success](Docs/npm_package_img.png)
+
+
+# Next Steps
+📝 **Pro Tip**: Be sure to read the `Node` folder carefully before advancing to the next level.
 
 # Happy coding! 🎃
