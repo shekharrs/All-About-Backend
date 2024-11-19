@@ -1,3 +1,4 @@
+/* Module👇 */
 // writeFile - to create the file
 // appendFile - to update the file
 // rename - to rename the file
@@ -6,6 +7,7 @@
 // rm - to delete the folder
 // readFile - to read the file data
 // mkdir - to create the folder
+// http - to create and manage web servers and handle HTTP requests and responses.
 
 
 const fs = require('fs');
