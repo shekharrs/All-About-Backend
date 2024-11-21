@@ -16,5 +16,3 @@
 - Working with modules.
 - File system operations.
 - Understanding HTTP module.
-
-to be continued
