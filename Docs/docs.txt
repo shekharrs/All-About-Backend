@@ -16,3 +16,13 @@
 - Working with modules.
 - File system operations.
 - Understanding HTTP module.
+
+
+
+✅ NPM👇
+- NPM Understanding
+- installing and uninstalling anything basics & advanced
+- Understanding node_modules
+- Dependencies
+- devdependencies
+- scripts ( understanding default scripts PATH and custom scripts )
