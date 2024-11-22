@@ -16,13 +16,23 @@ Before diving into the backend development journey, it's crucial to have a solid
 
 ![Node.js Learning Path](Docs/nodejs_learning_img.png)  
 
+---
+
+## 📝 Next Steps  
+
+**Pro Tip:** Take the time to review the `Node` folder carefully before moving forward.  
+
+---
+
+# 🌟 Level 3 - NPM  
+
 ![NPM Packages Overview](Docs/npm_package_img.png)  
 
 ---
 
 ## 📝 Next Steps  
 
-**Pro Tip:** Take the time to review the `Node` folder carefully before moving forward.  
+**Pro Tip:** Take the time to review the `NPM` folder carefully before moving forward.  
 
 ---
 
