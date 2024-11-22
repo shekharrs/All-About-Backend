@@ -1,0 +1,11 @@
+* Setting up parsers for form
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+* Setting up ejs for ejs pages
+- install ejs from npm
+- setup ejs as a view engine
+
+* Setting up public static files
+
+* Dynamic Routing (dynamic routing || how to get data coming from frontend at backend route)

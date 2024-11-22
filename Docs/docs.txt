@@ -37,3 +37,14 @@
 - Middleware
 - Request and response handling
 - Error handling
+
+
+
+✅ Backend Series👇
+Chp_01: Form Handling, Sessions & Cookies
+
+Chp_02:
+* Setting up parsers for form
+* Setting up ejs for ejs pages
+* Setting up public static files
+* Dynamic Routing (dynamic routing || how to get data coming from frontend at backend route)
