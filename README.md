@@ -1,4 +1,4 @@
-# 🚀 Level 1 - Important JavaScript Topics  
+# 🚀 Level 1 - Important JavaScript Topics
 
 Before diving into the backend development journey, it's crucial to have a solid understanding of key JavaScript concepts. Here's a checklist to guide your learning process:  
 
