@@ -16,12 +16,14 @@ app.get('/', function(req, res){
     res.render("index");
 });
 
+// req.params ---> semicolon (:) || req.params.username
 app.get('/profile/:username', function(req, res){
-    res.send(`Welcome, ${req.params.username} to the website`);
+    res.send(`Welcome, ${req.params.username} to the website.`);
 });
 
-app.get('/author/:profile/:age', function(req, res){
-    res.send(`Welcome, ${req.params.profile.age} to the website`);
+// req.params.username || req.params.age
+app.get('/profile/:username/:age', function(req, res){
+    res.send(`Welcome, ${req.params.username} of age ${req.params.age}`);
 });
 
 app.listen(3000, function() {
