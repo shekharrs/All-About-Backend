@@ -13,9 +13,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs')
 
 app.get('/', function(req, res){
-    res.render("index")
-})
+    res.render("index");
+});
+
+app.get('/profile/:username', function(req, res){
+    res.send(`Welcome, ${req.params.username} to the website`);
+});
+
+app.get('/author/:profile/:age', function(req, res){
+    res.send(`Welcome, ${req.params.profile.age} to the website`);
+});
 
 app.listen(3000, function() {
-    console.log("Server is running...")
+    console.log("Server is running...");
 });
