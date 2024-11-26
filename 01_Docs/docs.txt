@@ -61,3 +61,6 @@ Chp_03: Making a notes taking web-app (Hands-on Practice till now what we learn)
 * mongodb connection
 * terminologies - collections, documents, schemas, keys, models
 * CRUD operation - CREATE, READ, UPDATE, DELETE
+
+02_Practical_Learning:
+* In this we create a web app with the help of EJS template engine for more implementing practical learning in CRUD operation also how mongodb is connecting to the backend
