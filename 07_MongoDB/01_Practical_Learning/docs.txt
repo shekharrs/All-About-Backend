@@ -1,0 +1,8 @@
+Topics which are covered in 01_Practical_Learning👇
+
+- Data Storage
+- Types of Data Base - SQL | NoSQL
+- What and why?
+- mongodb connection
+- terminologies - collections, documents, schemas, keys, models
+- CRUD operation - CREATE, READ, UPDATE, DELETE

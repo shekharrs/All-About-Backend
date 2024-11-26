@@ -50,3 +50,14 @@ Chp_02:
 * Dynamic Routing (dynamic routing || how to get data coming from frontend at backend route)
 
 Chp_03: Making a notes taking web-app (Hands-on Practice till now what we learn)
+
+
+
+✅ MongoDB👇
+01_Practical_Learning:
+* Data Storage
+* Types of Data Base - SQL | NoSQL
+* What and why?
+* mongodb connection
+* terminologies - collections, documents, schemas, keys, models
+* CRUD operation - CREATE, READ, UPDATE, DELETE
