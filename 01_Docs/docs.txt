@@ -64,3 +64,24 @@ Chp_03: Making a notes taking web-app (Hands-on Practice till now what we learn)
 
 02_Practical_Learning:
 * In this we create a web app with the help of EJS template engine for more implementing practical learning in CRUD operation also how mongodb is connecting to the backend
+
+03_Authentication_Authorization
+01_Theory👇
+* Authentication - before sending data to the user first it check to the server who is user and it is present or not in the database
+* Authorization - authorized to perform some tasks which are only allowed to be executed by the admin
+---------------------------------------------------------------------
+* How to set the cookies and read the cookie
+
+*How to use bcrypt for password encryption and decryption (in decryption it basically compare the password in plain text and in hash if both the value is true then it means that the password is match otherwise it is false and it is not a matched password.)
+
+*What is JWT and how to store the data in JWT also how to remove the data from JWT
+
+02_Practical_Learning👇
+* Create User Account
+      - mongoose
+      - schema
+      - model
+      - usercreate -> password -> hash
+      - jwt token -> cookie
+
+      - login -> token -> decrypt -> email
