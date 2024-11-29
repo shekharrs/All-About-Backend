@@ -5,6 +5,8 @@ const path = require('path');
 const userModel = require('./models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const { log } = require('console');
+const user = require('./models/user');
 
 app.set("view engine", "ejs");
 
@@ -15,6 +17,31 @@ app.use(cookieParser());
 
 app.get('/', (req, res) => {
     res.render('index');
+});
+
+app.get('/logout', (req, res) => {
+    res.cookie("token", "");
+    res.redirect("/");
+})
+
+app.get('/login', (req, res) => {
+    res.render("login");
+});
+
+app.post('/login', async (req, res) => {
+    let user = await userModel.findOne({email: req.body.email});
+    if(!user) return res.send("Opps! Something went wrong.");
+    
+    bcrypt.compare(req.body.password, user.password, function(err, result) {
+        if(result) {
+            let token = jwt.sign({email: user.email}, "secret");
+            res.cookie("token", token);
+            res.send("Welcome, now you are sign in!!");
+        }
+        else{
+            res.send("Opps! Something went wrong.");
+        }
+    })
 });
 
 app.post('/create',  (req, res) => {
@@ -31,7 +58,6 @@ app.post('/create',  (req, res) => {
 
             let token = jwt.sign({email}, "secret");
             res.cookie("token", token);
-            console.log(req.cookies); // cookies is stored in client side server
         
             res.send(createdUser);
         });
