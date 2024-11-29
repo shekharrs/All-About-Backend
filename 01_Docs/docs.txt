@@ -85,3 +85,7 @@ Chp_03: Making a notes taking web-app (Hands-on Practice till now what we learn)
       - jwt token -> cookie
 
       - login -> token -> decrypt -> email
+
+
+04_Data_Association
+01_Theory👇
