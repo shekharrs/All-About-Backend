@@ -90,3 +90,11 @@ Chp_03: Making a notes taking web-app (Hands-on Practice till now what we learn)
 04_Data_Association
 01_Theory👇
 * referring the data between user and post by giving ObjectID
+
+02_Practical_Learning👇
+* Creating a web app where user can write there post
+      - login and register
+      - logout
+      - post creation
+      - post like
+      - post delete
