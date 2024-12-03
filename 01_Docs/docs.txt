@@ -97,4 +97,5 @@ Chp_03: Making a notes taking web-app (Hands-on Practice till now what we learn)
       - logout
       - post creation
       - post like
+      - post edit
       - post delete
